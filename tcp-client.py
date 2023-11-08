@@ -6,7 +6,7 @@ IP = input("Server address: ")
 TCP_PORT = 5005
 BUFFER_SIZE = 1024
 MESSAGE = ''
-
+ 
 while True:
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.connect((IP, TCP_PORT))
