@@ -11,7 +11,7 @@ s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 s.bind((IP_ADDR, TCP_PORT))
 s.listen(1)
-
+ 
 while 1:
      conn, addr = s.accept()
      print('Client address:', addr)
