@@ -2,7 +2,7 @@
 # test5
 import socket
 import time
-  
+   
 IP_ADDR = '0.0.0.0'
 TCP_PORT = 5005
 BUFFER_SIZE = 1024
