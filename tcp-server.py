@@ -2,7 +2,7 @@
 # test5
 import socket
 import time
-    
+
 IP_ADDR = '0.0.0.0'
 TCP_PORT = 5005
 BUFFER_SIZE = 1024
@@ -17,7 +17,7 @@ while 1:
      print('Client address:', addr)
      data = conn.recv(BUFFER_SIZE)
      #if not data: break
-     currentTime = " " + " 1106 updated !!! " + time.ctime(time.time()) + "\r\n"
+     currentTime = " " + " server update success !!! " + time.ctime(time.time()) + "\r\n"
      print(data.decode('utf-8'))
      data = data + currentTime.encode('ascii')
      conn.send(data)  # echo message
